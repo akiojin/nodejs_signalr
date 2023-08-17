@@ -4,6 +4,8 @@
   "description": "",
   "scripts": {
     "build": "tsc",
+    "dist-clean": "rm -rf ./dist",
+    "clean": "rm -rf ./dist ./node_modules",
     "watch": "tsc -w",
     "prestart": "npm run build",
     "start": "func start",
