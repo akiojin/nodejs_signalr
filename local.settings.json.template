@@ -1,0 +1,13 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "AzureWebJobsFeatureFlags": "EnableWorkerIndexing",
+    "AzureWebJobsStorage": "<Connection String>",
+    "AzureSignalRConnectionString": "<Connection String>"
+  },
+  "Host": {
+      "CORS": "http://localhost:7071",
+      "CORSCredentials": true
+  }
+}

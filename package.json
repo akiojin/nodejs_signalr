@@ -1,0 +1,23 @@
+{
+  "name": "@akiojin/nodejs_v4_signalr",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prestart": "npm run build",
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "main": "dist/functions/*.js",
+  "dependencies": {
+    "@microsoft/signalr": "7.0.10",
+    "fs": "0.0.1-security"
+  },
+  "devDependencies": {
+    "@azure/functions": "4.0.0-alpha.11",
+    "@types/node": "18.x",
+    "azure-functions-core-tools": "^4.x",
+    "typescript": "^4.0.0"
+  }
+}
