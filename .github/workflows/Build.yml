@@ -1,0 +1,23 @@
+﻿name: Build
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - run: npm install
+
+      - run: npm run build
